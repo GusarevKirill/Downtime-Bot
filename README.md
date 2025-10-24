@@ -1,2 +1,2 @@
 # Downtime-Bot
-Downtime Bot for Telegram
+You can use this stub while your telegram bot is under maintenance.
