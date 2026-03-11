@@ -10,7 +10,9 @@ Reload systemd configuration:
 `sudo systemctl daemon-reload`
 ## Usage
 ### Start
-Run `sudo systemctl enable downtime-bot && sudo systemctl start downtime-bot`
+Run `./start.sh`
+or `sudo systemctl enable downtime-bot && sudo systemctl start downtime-bot`
 ### Stop
-Run `sudo systemctl disable downtime-bot && sudo systemctl stop downtime-bot`
+Run `./stop.sh`
+or `sudo systemctl disable downtime-bot && sudo systemctl stop downtime-bot`
 

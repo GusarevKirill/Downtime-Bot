@@ -5,5 +5,10 @@ if [[ $EUID -ne 0 ]]; then
     exit $?
 fi
 
-systemctl disable downtime-bot && systemctl stop downtime-bot
+# Console colors
+RED='\033[0;31m'
+NC='\033[0m'
+
+systemctl disable --now downtime-bot
+echo -e "Downtime Bot ${RED}stopped${NC}"
 

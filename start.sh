@@ -5,5 +5,11 @@ if [[ $EUID -ne 0 ]]; then
     exit $?
 fi
 
-systemctl enable downtime-bot && systemctl start downtime-bot
+# Console colors
+GREEN='\033[0;32m'
+NC='\033[0m'
+
+systemctl enable --now downtime-bot
+#echo -e "${GREEN}Downtime Bot started${NC}"
+echo -e "Downtime Bot ${GREEN}started${NC}"
 
