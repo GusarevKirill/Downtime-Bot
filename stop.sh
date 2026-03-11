@@ -5,5 +5,5 @@ if [[ $EUID -ne 0 ]]; then
     exit $?
 fi
 
-systemctl enable downtime-bot && systemctl start downtime-bot
+systemctl disable downtime-bot && systemctl stop downtime-bot
 
