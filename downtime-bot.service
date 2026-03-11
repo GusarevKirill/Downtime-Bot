@@ -1,0 +1,18 @@
+[Unit]
+Description=Downtime Telegram Bot
+After=network.target
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=kirgus
+WorkingDirectory=/opt/Downtime-Bot
+ExecStart=/opt/Downtime-Bot/venv/bin/python3 /opt/Downtime-Bot/main.py
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+
